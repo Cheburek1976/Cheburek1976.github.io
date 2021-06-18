@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"><title>Mogo</title>
+
+<style>
+    .accordion {
+  width: 450px;
+  margin: auto;
+}
+.panel {
+  border: 1px solid #222;
+  padding: 5px;
+}
+.panel-body {
+  display: none;
+}
+.panel-header h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<div class="accordion">
+    <div class="panel">
+      <div class="panel-header">
+        <h1>HTML</h1>
+      </div>
+      <div class="panel-body">
+        <p>helllo</p>
+       </div>
+     </div>
+<div class="panel">
+      <div class="panel-header">
+        <h1>HTML</h1>
+      </div>
+      <div class="panel-body">
+        <p>helllo</p>
+       </div>
+     </div>
+<div class="panel">
+      <div class="panel-header">
+        <h1>HTML</h1>
+      </div>
+      <div class="panel-body">
+        <p>helllo</p>
+       </div>
+     </div>  
+</div>
+
+</body>
+<script>
+    
+  $(".panel-body").toggle();{
+  $(this).parent().siblings('.panel-body').toggle();
+};
+</script>  
+</html>
