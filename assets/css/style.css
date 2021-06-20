@@ -559,25 +559,5 @@ position: relative;
     color: transparent;
 }
 
-.reviews__btn::after{
-content: "";
-    display: block;
 
-    width: 16px;
-    height: 16px;
 
-    border-top: 2px solid #ccc;
-    border-left: 2px solid #ccc;
-   
-
-}
-
-.reviews__btn--prev{
-    left: 0;
-    transform:rotate(-45deg);
-}
-
-.reviews__btn--next{
-    right: 0;
-    transform: rotate(135deg);
-}
